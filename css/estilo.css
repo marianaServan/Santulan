@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/*-----colores-----*/
+/*-----tipografías-----*/
+/*-----tamaños-----*/
+/* BÁSICOS */
+html {
+  font-size: 16px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+ol {
+  list-style-type: none; }
+
+ul {
+  list-style-type: none; }
+
+.pantallaCompleta {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+/* HEADER */
+.headerColor {
+  background-image: linear-gradient(to bottom, #fcf3c7, #f8f4df); }
+
+.navbar--ancho {
+  width: 9rem; }
+
+.anchoLogo {
+  width: 4rem; }
+
+/*------- Estilo letras ------*/
+.nombre {
+  font-family: "DM Serif Display", serif;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #662483;
+  text-align: center; }
+
+.hyp, .hypHeader, .hypHeaderActive, .hypBreadcrumb, .hypFooter {
+  /*la voy a usar para el footer también*/
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #662483;
+  font-size: 0.7rem; }
+
+.hypHeader, .hypHeaderActive {
+  text-align: center;
+  padding-left: 0.35rem;
+  padding-right: 0.35rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem; }
+  .hypHeader:hover, .hypHeaderActive:hover {
+    color: #f1a643; }
+
+.hypHeaderActive {
+  font-weight: bold; }
+
+.hypBreadcrumb:hover {
+  color: #f1a643; }
+
+/* BODY */
+.bodyColor {
+  background-color: #f8f4df; }
+
+/*------- Estilo letras ------*/
+.textGenTitulo {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.28rem;
+  color: #5e2a69;
+  text-align: center;
+  padding-bottom: 0.35rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem; }
+
+.textGenParrafo {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.81rem;
+  color: #492152;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 1.16rem;
+  padding-right: 1.16rem; }
+
+.textGenParrafoLeft {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.81rem;
+  color: #492152;
+  text-align: center;
+  text-align: left; }
+
+/*------- Botones ------*/
+.botones, .botonesFormulario {
+  color: #5e2a69;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  background-color: rgba(95, 42, 105, 0.144);
+  text-decoration: none;
+  text-transform: uppercase; }
+  .botones:hover, .botonesFormulario:hover {
+    color: #f1a643;
+    background-color: rgba(95, 42, 105, 0.479); }
+
+.botonesFormulario {
+  border-style: none;
+  margin-left: 0.35rem;
+  margin-right: 0.35rem; }
+
+/*------- Elementos Centrados ------*/
+.centradoHoriz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.textCentradoVer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/*------- Páginas ------*/
+/*------------------------ Productos -----------------------*/
+.tiposProductos {
+  padding-left: 0.12rem;
+  padding-right: 0.12rem; }
+  .tiposProductos:hover {
+    transform: scale(1.035, 1.035); }
+
+.cardEstilo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  word-wrap: break-word;
+  background-color: rgba(95, 42, 105, 0.144);
+  background-clip: border-box;
+  border: 0.06rem solid rgba(95, 42, 105, 0.479);
+  border-radius: 0.3rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 0.81rem;
+  color: #492152;
+  text-decoration: none; }
+  .cardEstilo:hover {
+    transform: scale(1.035, 1.035);
+    background-color: rgba(95, 42, 105, 0.479); }
+
+.cardAlto {
+  height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.bordeImagen {
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem; }
+
+/*------------------------ A medida -----------------------*/
+.carousel {
+  width: 50%; }
+
+/*------------------------ Talles -----------------------*/
+.imagenMedidas {
+  width: 60%; }
+
+/*------------------------ Contacto -----------------------*/
+.anchoYborde {
+  width: 100%;
+  border-color: rgba(95, 42, 105, 0.479);
+  border-width: thin; }
+
+.textGenInput {
+  padding-top: 0.35rem; }
+
+/* FOOTER */
+footer {
+  background-image: linear-gradient(to top, #fcf3c7, #f8f4df);
+  height: 4rem;
+  padding-top: 1.4rem; }
+
+.hypFooter:hover {
+  color: #f1a643; }
+
+.iconos {
+  padding-left: 0%; }
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .nombre {
+    font-size: 2.2rem; }
+  .hyp, .hypHeader, .hypHeaderActive, .hypBreadcrumb, .hypFooter {
+    font-size: 1rem; }
+  .hypBreadcrumb {
+    font-size: 0.9rem; }
+  .textGenTitulo {
+    font-size: 2rem; }
+  .textGenParrafo {
+    font-size: 1.1rem; }
+  .textGenParrafoLeft {
+    font-size: 1.1rem; }
+  .anchoLogo {
+    width: 5rem; }
+  .imagenMedidas {
+    width: 80%; }
+  .cardEstilo {
+    font-size: 1.1rem; } }
+
+@media (min-width: 1024px) {
+  .nombre {
+    font-size: 2.5rem; }
+  .hyp, .hypHeader, .hypHeaderActive, .hypBreadcrumb, .hypFooter {
+    font-size: 1.2rem; }
+  .textGenTitulo {
+    font-size: 2rem; }
+  .textGenParrafo {
+    font-size: 1.2rem; }
+  .textGenParrafoLeft {
+    font-size: 1.2rem; }
+  .anchoLogo {
+    width: 5.1rem; }
+  .imagenMedidas {
+    width: 60%; }
+  .cardEstilo {
+    font-size: 1.2rem; } }
