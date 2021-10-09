@@ -26,7 +26,18 @@
                     <!-- PÁGINAS -->
                     <div class="nav">
                         <a class="hypHeader" aria-current="page" href="..\..\index.html">HOME</a>
-                        <a class="hypHeaderActive" href="..\Productos.html">PRODUCTOS</a>                        
+                        
+                        <div class="dropdown">
+                            <a class="hypHeaderActive dropdown" href="..\Productos.html">
+                                PRODUCTOS <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a class="hypHeader" href="remeras.html">REMERAS</a>
+                                <a class="hypHeader" href="sweaters.html">SWEATERS</a>
+                                <a class="hypHeader" href="camperas.html">CAMPERAS</a>
+                            </div>
+                        </div>
+
                         <a class="hypHeader" href="..\Amedida.html">A MEDIDA</a>
                         <a class="hypHeader" href="..\Talles.html">TALLES</a>
                         <a class="hypHeader" href="..\Contacto.html">CONTACTO</a>                        
@@ -36,7 +47,7 @@
             
             <nav class="centradoHoriz" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a class="hyp hyp--breadcrumb textCentradoVer" href="..\Productos.html">PRODUCTOS</a></li>
+                  <li class="breadcrumb-item"><a class="hypBreadcrumb textCentradoVer" href="..\Productos.html">PRODUCTOS</a></li>
                   <li class="hyp hyp--breadcrumb breadcrumb-item active" aria-current="page">REMERAS</li>
                 </ol>
             </nav>
