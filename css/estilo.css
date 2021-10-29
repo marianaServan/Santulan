@@ -24,13 +24,35 @@ ul {
 
 /* HEADER */
 .headerColor {
-  background-image: linear-gradient(to bottom, #fcf3c7, #f8f4df); }
-
-.navbar--ancho {
-  width: 9rem; }
+  background-image: linear-gradient(to bottom, #f1cc9b, #fdefd1); }
 
 .anchoLogo {
   width: 4rem; }
+
+.nav--otrasPaginas {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+/*-------- Menú hamburguesa --------*/
+.nav--colapsado {
+  display: flex;
+  flex-direction: column; }
+
+.miBurger {
+  width: 47px;
+  height: 34px;
+  border-color: rgba(95, 42, 105, 0.479);
+  background-color: transparent;
+  border-radius: 0.3rem; }
+
+.miBurger .line {
+  width: 80%;
+  height: 2px;
+  float: left;
+  margin-left: 5px;
+  background-color: rgba(95, 42, 105, 0.479);
+  margin-bottom: 5px; }
 
 /*-------- Menú desplegable --------*/
 .dropdown {
@@ -40,12 +62,13 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f8f4df;
+  background-color: #fdefd1;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; }
 
 .dropdown:hover .dropdown-content {
-  display: block; }
+  display: flex;
+  flex-direction: column; }
 
 /*------- Estilo letras ------*/
 .nombre {
@@ -55,7 +78,7 @@ ul {
   color: #662483;
   text-align: center; }
 
-.hyp, .hypHeader, .hypHeaderActive, .hypBreadcrumb, .hypFooter {
+.hyp, .hypHeader, .hypHeaderActive, .hypBreadcrumb, .hypHeaderBoton, .hypHeaderBotonDesplegado, .hypFooter {
   /*la voy a usar para el footer también*/
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
@@ -63,9 +86,9 @@ ul {
   font-size: 0.8rem; }
 
 .hypHeader, .hypHeaderActive {
-  text-align: center;
-  padding-left: 0.35rem;
-  padding-right: 0.35rem;
+  text-align: right;
+  padding-left: 0.385rem;
+  padding-right: 0.385rem;
   padding-top: 0.35rem;
   padding-bottom: 0.35rem; }
   .hypHeader:hover, .hypHeaderActive:hover {
@@ -77,9 +100,20 @@ ul {
 .hypBreadcrumb:hover {
   color: #f1a643; }
 
+.hypHeaderBoton, .hypHeaderBotonDesplegado {
+  text-align: left;
+  padding-left: 0.7rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem; }
+  .hypHeaderBoton:hover, .hypHeaderBotonDesplegado:hover {
+    color: #f1a643; }
+
+.hypHeaderBotonDesplegado {
+  padding-right: 0.7rem; }
+
 /* BODY */
 .bodyColor {
-  background-color: #f8f4df; }
+  background-color: #fdefd1; }
 
 /*------- Estilo letras ------*/
 .textGenTitulo {
@@ -113,6 +147,18 @@ ul {
   text-align: center;
   text-align: left; }
 
+.textGenParrafoTabla {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.81rem;
+  color: #492152;
+  text-align: center;
+  text-decoration: solid;
+  padding-left: 1.16rem;
+  padding-right: 1.16rem;
+  font-weight: bold; }
+
 /*------- Botones ------*/
 .botones, .botonesFormulario {
   color: #5e2a69;
@@ -142,7 +188,15 @@ ul {
   flex-direction: column;
   justify-content: center; }
 
+/*------ Espacio entre párrafos -------*/
+.espaciado {
+  margin-top: 1rem; }
+
 /*------- Páginas ------*/
+/*------------------------ Home -----------------------*/
+.imagenCircular {
+  border-radius: 7rem; }
+
 /*------------------------ Productos -----------------------*/
 .tiposProductos {
   padding-left: 0.12rem;
@@ -186,6 +240,10 @@ ul {
 .imagenMedidas {
   width: 60%; }
 
+.colorBordeTabla {
+  border-color: rgba(95, 42, 105, 0.479);
+  border-style: solid; }
+
 /*------------------------ Contacto -----------------------*/
 .anchoYborde {
   width: 100%;
@@ -197,7 +255,7 @@ ul {
 
 /* FOOTER */
 footer {
-  background-image: linear-gradient(to top, #fcf3c7, #f8f4df);
+  background-image: linear-gradient(to top, #f1cc9b, #fdefd1);
   height: 4rem;
   padding-top: 1.4rem; }
 
@@ -211,7 +269,11 @@ footer {
 @media (min-width: 768px) {
   .nombre {
     font-size: 2.2rem; }
-  .hyp, .hypHeader, .hypHeaderActive, .hypBreadcrumb, .hypFooter {
+  .nav--colapsado {
+    flex-direction: row; }
+  .miBurger {
+    display: none; }
+  .hyp, .hypHeader, .hypHeaderActive, .hypBreadcrumb, .hypHeaderBoton, .hypHeaderBotonDesplegado, .hypFooter {
     font-size: 1rem; }
   .hypBreadcrumb {
     font-size: 0.9rem; }
@@ -220,6 +282,8 @@ footer {
   .textGenParrafo {
     font-size: 1.1rem; }
   .textGenParrafoLeft {
+    font-size: 1.1rem; }
+  .textGenParrafoTabla {
     font-size: 1.1rem; }
   .anchoLogo {
     width: 5rem; }
@@ -231,13 +295,19 @@ footer {
 @media (min-width: 1024px) {
   .nombre {
     font-size: 2.5rem; }
-  .hyp, .hypHeader, .hypHeaderActive, .hypBreadcrumb, .hypFooter {
+  .nav--colapsado {
+    flex-direction: row; }
+  .miBurger {
+    display: none; }
+  .hyp, .hypHeader, .hypHeaderActive, .hypBreadcrumb, .hypHeaderBoton, .hypHeaderBotonDesplegado, .hypFooter {
     font-size: 1.2rem; }
   .textGenTitulo {
     font-size: 2rem; }
   .textGenParrafo {
     font-size: 1.2rem; }
   .textGenParrafoLeft {
+    font-size: 1.2rem; }
+  .textGenParrafoTabla {
     font-size: 1.2rem; }
   .anchoLogo {
     width: 5.1rem; }

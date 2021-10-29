@@ -17,49 +17,60 @@
 </head>
 <body class="bodyColor">
     <div class="pantallaCompleta">
+
         <header class="headerColor">
-            <nav class="navbar">
+            <nav class="navbar navbar-expand-lg navbar-expand-md">
                 <div class="container-fluid">
-                    <!--LOGO (HOME)-->
-                    <a class="navbar-brand navbar--ancho" href="..\..\index.html">
-                        <img src="..\..\images/LogoSantulan1.png" alt="Logo" class="anchoLogo d-inline-block align-text-center img-fluid">
+                    <!-- LOGO (HOME) -->
+                    <a class="navbar-brand" href="../../index.html">
+                        <img src="../../images/LogoSantulan1.png" alt="Logo" class="anchoLogo d-inline-block align-text-center img-fluid">
                         <span class="nombre"> Santulan </span> 
                     </a>
+                    
+                    <!-- MENÚ HAMBUERGUESA   -->
+                    <button class="miBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="line"></span> 
+                        <span class="line"></span> 
+                        <span class="line" style="margin-bottom: 0;"></span>
+                    </button>
+
                     <!-- PÁGINAS -->
-                    <div class="nav">
-                        <a class="hypHeader" aria-current="page" href="..\..\index.html">HOME</a>
-                        
-                        <div class="dropdown">
-                            <a class="hypHeaderActive dropdown" href="..\Productos.html">
-                                PRODUCTOS <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <a class="hypHeader" href="remeras.html">REMERAS</a>
-                                <a class="hypHeader" href="sweaters.html">SWEATERS</a>
-                                <a class="hypHeader" href="camperas.html">CAMPERAS</a>
-                            </div>
-                        </div>
+                    <div class="collapse navbar-collapse nav--otrasPaginas" id="navbarSupportedContent">
+                        <div class="nav nav--colapsado">
+                            <a class="hypHeader" aria-current="page" href="../../index.html">HOME</a>
+                            
+                            <div>
+                                <div class="dropdown">
+                                    <i class="bi bi-chevron-down hypHeaderBoton"></i>
+                                    <div class="dropdown-content">
+                                        <a class="hypHeaderBotonDesplegado" href="remeras.html">REMERAS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="sweaters.html">SWEATERS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="camperas.html">CAMPERAS</a>
+                                    </div>                                  
+                                </div>  
+                                <a class="hypHeaderActive dropdown" href="../Productos.html">
+                                    PRODUCTOS 
+                                </a>
+                            </div>    
 
-                        <a class="hypHeader" href="..\Amedida.html">A MEDIDA</a>
-                        <a class="hypHeader" href="..\Talles.html">TALLES</a>
-                        <a class="hypHeader" href="..\Contacto.html">CONTACTO</a>                        
-                    </div>                        
+                            <a class="hypHeader" href="../Amedida.html">A MEDIDA</a>
+                            <a class="hypHeader" href="../Talles.html">TALLES</a>
+                            <a class="hypHeader" href="../Contacto.html">CONTACTO</a>
+                        </div>                                                
+                    </div>
                 </div>
-            </nav>   
+            </nav>    
+        </header>         
             
-            <nav class="centradoHoriz" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a class="hypBreadcrumb textCentradoVer" href="..\Productos.html">PRODUCTOS</a></li>
-                  <li class="hyp hyp--breadcrumb breadcrumb-item active" aria-current="page">SWEATERS</li>
-                </ol>
-            </nav>
-
-        </header>
+        <nav class="centradoHoriz" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="hypBreadcrumb textCentradoVer" href="..\Productos.html">PRODUCTOS</a></li>
+              <li class="hypBreadcrumb breadcrumb-item active" aria-current="page">SWEATERS</li>
+            </ol>
+        </nav>
     
         <main>
-
-            <div class="container">
-                
+            <div class="container">                
                 <div class="row">
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="centradoHoriz cardAlto">
@@ -138,14 +149,8 @@
                             </div>
                         </div>                                
                     </div>
-
-                </div>
-                
-                
-            </div>
-
-                      
-    
+                </div>       
+            </div>       
         </main>
     
         <footer>

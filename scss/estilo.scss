@@ -1,13 +1,11 @@
 @import "variables";
 
 
-
 /* BÁSICOS */
 
 html{
     font-size: 16px;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +16,6 @@ ol{
 ul{
     list-style-type: none;
 }
-
 .pantallaCompleta{
     min-height: 100vh;
     display: flex;
@@ -27,20 +24,39 @@ ul{
 }
 
 
-
-
 /* HEADER */
 
 .headerColor{
     background-image: linear-gradient(to bottom, $colorNaranjaOscuro, $colorNaranjaClaro);
 }
-
-.navbar--ancho{
-    width: 9rem;
-}
-
 .anchoLogo{
     width: 4rem;
+}
+.nav--otrasPaginas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/*-------- Menú hamburguesa --------*/
+.nav--colapsado{
+    display: flex;
+    flex-direction: column;
+}
+.miBurger{
+    width: 47px;
+    height: 34px;
+    border-color: $colorBotonesHover;
+    background-color: transparent;
+    border-radius:$radioBordesCards ;
+}
+.miBurger .line{
+    width: 80%;
+    height: 2px;
+    float: left;
+    margin-left: 5px;
+    background-color: $colorBotonesHover;
+    margin-bottom: 5px;    
 }
 
 /*-------- Menú desplegable --------*/
@@ -55,9 +71,10 @@ ul{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-.dropdown:hover .dropdown-content {display: block;}
-
-
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
 
 /*------- Estilo letras ------*/
 .nombre{
@@ -67,7 +84,6 @@ ul{
     color: $colorLetraOscuro;
     text-align: center;
 }
-
 .hyp{ /*la voy a usar para el footer también*/
     font-family: $letraTextoGen;
     text-decoration: none;
@@ -76,9 +92,9 @@ ul{
 }
 .hypHeader{ 
     @extend .hyp;
-    text-align: center;
-    padding-left: $espacio;
-    padding-right: $espacio;
+    text-align: right;
+    padding-left: $espacio*1.1;
+    padding-right: $espacio*1.1;
     padding-top: $espacio;
     padding-bottom: $espacio;
 
@@ -96,12 +112,25 @@ ul{
         color: $colorHoverLetras;
     }
 }
+.hypHeaderBoton{ 
+    @extend .hyp;
+    text-align: left;
+    padding-left: $espacio*2;
+    padding-top: $espacio;
+    padding-bottom: $espacio;
 
-
-
+    &:hover{
+        color: $colorHoverLetras;
+    }
+}
+.hypHeaderBotonDesplegado{ 
+    @extend .hypHeaderBoton;
+    padding-right: $espacio*2;
+}
 
 
 /* BODY */
+
 .bodyColor{
     background-color: $colorNaranjaClaro;
 }
@@ -115,7 +144,6 @@ ul{
     color: $fontColor;
     text-align: center;    
 }
-
 .textGenTitulo{
     @include textGen($letraTitulos, 1.28rem, $colorTitulos);
     padding-bottom: $espacio;
@@ -131,6 +159,13 @@ ul{
 .textGenParrafoLeft{
     @include textGen($letraTextoGen, $sizeTextoGen, $colorTextoGen);
     text-align: left;
+}
+.textGenParrafoTabla{
+    @include textGen($letraTextoGen, $sizeTextoGen, $colorTextoGen);
+    text-decoration: solid;
+    padding-left: 1.16rem;
+    padding-right: 1.16rem;
+    font-weight: bold;
 }
 
 /*------- Botones ------*/
@@ -167,7 +202,17 @@ ul{
     justify-content: center;
 }
 
+/*------ Espacio entre párrafos -------*/
+.espaciado{
+    margin-top: $espacioTop;
+}
+
 /*------- Páginas ------*/
+
+/*------------------------ Home -----------------------*/
+.imagenCircular{
+    border-radius: 7rem;
+}
 
 /*------------------------ Productos -----------------------*/
 .tiposProductos{
@@ -178,7 +223,6 @@ ul{
         transform: scale(1.035,1.035);
     }
 }
-
 .cardEstilo{
     position: relative;
     display: flex;
@@ -200,7 +244,6 @@ ul{
         background-color: $colorBotonesHover;
     }
 }
-
 .cardAlto{
     height: 100%;
     padding-top: 1rem;
@@ -220,6 +263,10 @@ ul{
 .imagenMedidas{
     width: 60%;
 }
+.colorBordeTabla{
+    border-color: $colorBotonesHover;
+    border-style: solid;
+}
 
 /*------------------------ Contacto -----------------------*/
 .anchoYborde{
@@ -232,37 +279,35 @@ ul{
 }
 
 
-
-
-
-
 /* FOOTER */
+
 footer{
     background-image: linear-gradient(to top, $colorNaranjaOscuro, $colorNaranjaClaro);
     height: 4rem;
     padding-top: 1.4rem;
 }
-
 .hypFooter{
     @extend .hyp; 
     &:hover{
         color: $colorHoverLetras;
     }
 } 
-
 .iconos{
     padding-left: 0%;
 }
 
 
-
-
-
-
 /* RESPONSIVE */
+
 @media (min-width:768px) {    
     .nombre{
         font-size: 2.2rem; 
+    }
+    .nav--colapsado{
+        flex-direction: row;
+    }
+    .miBurger{
+        display: none;
     }
     .hyp{
         font-size: 1rem;
@@ -279,6 +324,9 @@ footer{
     .textGenParrafoLeft{
         font-size: $sizeTextoGenMd;
     }
+    .textGenParrafoTabla{
+        font-size: $sizeTextoGenMd;
+    }
     .anchoLogo{
         width: 5rem;
     }
@@ -290,11 +338,15 @@ footer{
     }
 }
 
-
-
 @media (min-width:1024px) {
     .nombre{
         font-size: 2.5rem;
+    }
+    .nav--colapsado{
+        flex-direction: row;
+    }    
+    .miBurger{
+        display: none;
     }
     .hyp{
         font-size: $sizeTextoGenLg;
@@ -306,6 +358,9 @@ footer{
         font-size: $sizeTextoGenLg;
     }
     .textGenParrafoLeft{
+        font-size: $sizeTextoGenLg;
+    }
+    .textGenParrafoTabla{
         font-size: $sizeTextoGenLg;
     }
     .anchoLogo{

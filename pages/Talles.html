@@ -18,39 +18,53 @@
 </head>
 <body class="bodyColor">
     <div class="pantallaCompleta">
-        <header class="headerColor">
-            <nav class="navbar">
+
+        <header class="headerColor">   
+            <nav class="navbar navbar-expand-lg navbar-expand-md">
                 <div class="container-fluid">
-                    <!--LOGO (HOME)-->
-                    <a class="navbar-brand navbar--ancho" href="..\index.html">
-                        <img src="..\images/LogoSantulan1.png" alt="Logo" class="anchoLogo d-inline-block align-text-center img-fluid">
+                    <!-- LOGO (HOME) -->
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/LogoSantulan1.png" alt="Logo" class="anchoLogo d-inline-block align-text-center img-fluid">
                         <span class="nombre"> Santulan </span> 
                     </a>
+                    
+                    <!-- MENÚ HAMBUERGUESA   -->
+                    <button class="miBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="line"></span> 
+                        <span class="line"></span> 
+                        <span class="line" style="margin-bottom: 0;"></span>
+                    </button>
+
                     <!-- PÁGINAS -->
-                    <div class="nav">
-                        <a class="hypHeader" aria-current="page" href="..\index.html">HOME</a>
-                        
-                        <div class="dropdown">
-                            <a class="hypHeader dropdown" href="Productos.html">
-                                PRODUCTOS <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <a class="hypHeader" href="subpages/remeras.html">REMERAS</a>
-                                <a class="hypHeader" href="subpages/sweaters.html">SWEATERS</a>
-                                <a class="hypHeader" href="subpages/camperas.html">CAMPERAS</a>
-                            </div>
-                        </div>
-                                                
-                        <a class="hypHeader" href="Amedida.html">A MEDIDA</a>
-                        <a class="hypHeaderActive" href="Talles.html">TALLES</a>
-                        <a class="hypHeader" href="Contacto.html">CONTACTO</a>                        
-                    </div>                        
+                    <div class="collapse navbar-collapse nav--otrasPaginas" id="navbarSupportedContent">
+                        <div class="nav nav--colapsado">
+                            <a class="hypHeader" aria-current="page" href="../index.html">HOME</a>
+                            
+                            <div>
+                                <div class="dropdown">
+                                    <i class="bi bi-chevron-down hypHeaderBoton"></i>
+                                    <div class="dropdown-content">
+                                        <a class="hypHeaderBotonDesplegado" href="subpages/remeras.html">REMERAS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="subpages/sweaters.html">SWEATERS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="subpages/camperas.html">CAMPERAS</a>
+                                    </div>                                  
+                                </div>  
+                                <a class="hypHeader dropdown" href="Productos.html">
+                                    PRODUCTOS 
+                                </a>
+                            </div>    
+
+                            <a class="hypHeader" href="Amedida.html">A MEDIDA</a>
+                            <a class="hypHeaderActive" href="Talles.html">TALLES</a>
+                            <a class="hypHeader" href="Contacto.html">CONTACTO</a>
+                        </div>                                                
+                    </div>
                 </div>
-            </nav>            
+            </nav>
         </header>
     
         <main>
-            <div>
+            <div class="container">
                 <h1 class="textGenTitulo"> Nuestros talles</h1>
     
                 <!-- sobre la tabla -->
@@ -71,122 +85,124 @@
             <!-- La tabla de talles -->
             <div class="container">
                 <div class="table-responsive">
-                    <table class="table table-bordered textGen">
+                    <table class="table table-bordered">
                         <!-- Los usuales -->
-                        <thead>                        
+                        <thead class="colorBordeTabla">                        
                             <tr>
-                                <th scope="col" class="textGenParrafo"></th>
-                                <th scope="col" colspan="2" class="textGenParrafo">XS</th>
-                                <th scope="col" colspan="2" class="textGenParrafo">S</th>
-                                <th scope="col" colspan="2" class="textGenParrafo">M</th>
-                                <th scope="col" colspan="4" class="textGenParrafo">L</th>
-                                <th scope="col" colspan="2" class="textGenParrafo">XL</th>
-                                <th scope="col" colspan="2" class="textGenParrafo">XL+</th>
-                                <th scope="col" colspan="2" class="textGenParrafo">XXL</th>
+                                <th scope="col" class="textGenParrafoTabla "></th>
+                                <th scope="col" colspan="2" class="textGenParrafoTabla ">XS</th>
+                                <th scope="col" colspan="2" class="textGenParrafoTabla ">S</th>
+                                <th scope="col" colspan="2" class="textGenParrafoTabla ">M</th>
+                                <th scope="col" colspan="4" class="textGenParrafoTabla ">L</th>
+                                <th scope="col" colspan="2" class="textGenParrafoTabla ">XL</th>
+                                <th scope="col" colspan="2" class="textGenParrafoTabla ">XL+</th>
+                                <th scope="col" colspan="2" class="textGenParrafoTabla ">XXL</th>
                             </tr>
                         </thead>
     
                         <!-- Los de Santulan -->
-                        <thead>
+                        <thead class="colorBordeTabla">
                             <tr>
-                              <th scope="col" class="textGenParrafo"></th>
-                              <th scope="col" class="textGenParrafo">1A</th>
-                              <th scope="col" class="textGenParrafo">1B</th>
-                              <th scope="col" class="textGenParrafo">2A</th>
-                              <th scope="col" class="textGenParrafo">2B</th>
-                              <th scope="col" class="textGenParrafo">3B</th>
-                              <th scope="col" class="textGenParrafo">4A</th>                          
-                              <th scope="col" class="textGenParrafo">4B</th>                          
-                              <th scope="col" class="textGenParrafo">4C</th>
-                              <th scope="col" class="textGenParrafo">4D</th>
-                              <th scope="col" class="textGenParrafo">5A</th>
-                              <th scope="col" class="textGenParrafo">5B</th>
-                              <th scope="col" class="textGenParrafo">6A</th>                          
-                              <th scope="col" class="textGenParrafo">6B</th>
-                              <th scope="col" class="textGenParrafo">7A</th>
-                              <th scope="col" class="textGenParrafo">7B</th>
+                            <th scope="col" class="textGenParrafoTabla"></th>
+                            <th scope="col" class="textGenParrafoTabla">1A</th>
+                            <th scope="col" class="textGenParrafoTabla">1B</th>
+                            <th scope="col" class="textGenParrafoTabla">2A</th>
+                            <th scope="col" class="textGenParrafoTabla">2B</th>
+                            <th scope="col" class="textGenParrafoTabla">3A</th>
+                            <th scope="col" class="textGenParrafoTabla">3B</th>
+                            <th scope="col" class="textGenParrafoTabla">4A</th>  
+                            <th scope="col" class="textGenParrafoTabla">4B</th>                          
+                            <th scope="col" class="textGenParrafoTabla">4C</th>
+                            <th scope="col" class="textGenParrafoTabla">4D</th>
+                            <th scope="col" class="textGenParrafoTabla">5A</th>
+                            <th scope="col" class="textGenParrafoTabla">5B</th>
+                            <th scope="col" class="textGenParrafoTabla">6A</th>                          
+                            <th scope="col" class="textGenParrafoTabla">6B</th>
+                            <th scope="col" class="textGenParrafoTabla">7A</th>
+                            <th scope="col" class="textGenParrafoTabla">7B</th>
                             </tr>
                         </thead>
     
-                        <tbody>
-                          <tr>
-                            <th scope="row" class="textGenParrafo">Largo</th>
-                            <td class="textGenParrafo">68</td>
-                            <td class="textGenParrafo">74</td>
-                            <td class="textGenParrafo">70</td>
-                            <td class="textGenParrafo">76</td>
-                            <td class="textGenParrafo">73</td>
-                            <td class="textGenParrafo">79</td>
-                            <td class="textGenParrafo">75</td>                        
-                            <td class="textGenParrafo">81</td>
-                            <td class="textGenParrafo">75</td>
-                            <td class="textGenParrafo">81</td>
-                            <td class="textGenParrafo">76</td>
-                            <td class="textGenParrafo">82</td>
-                            <td class="textGenParrafo">78</td>
-                            <td class="textGenParrafo">84</td>
-                            <td class="textGenParrafo">80</td>
-                            <td class="textGenParrafo">86</td>
-                          </tr>
-                          <tr>
-                            <th scope="row" class="textGenParrafo">Ancho de hombros</th>                        
-                            <td colspan="2" class="textGenParrafo">38</td>                 
-                            <td colspan="2" class="textGenParrafo">39</td>                 
-                            <td colspan="2" class="textGenParrafo">41</td>                 
-                            <td colspan="2" class="textGenParrafo">42</td>                 
-                            <td colspan="2" class="textGenParrafo">45</td>                 
-                            <td colspan="2" class="textGenParrafo">43</td>                 
-                            <td colspan="2" class="textGenParrafo">45</td>                 
-                            <td colspan="2" class="textGenParrafo">49</td>
-                          </tr>
-                          <tr>
-                            <th scope="row" class="textGenParrafo">Contorno de pecho</th>
-                            <td colspan="2" class="textGenParrafo">96</td>                 
-                            <td colspan="2" class="textGenParrafo">100</td>                 
-                            <td colspan="2" class="textGenParrafo">104</td>                 
-                            <td colspan="4" class="textGenParrafo">108</td>                                  
-                            <td colspan="2" class="textGenParrafo">112</td>                 
-                            <td colspan="2" class="textGenParrafo">120</td>                 
-                            <td colspan="2" class="textGenParrafo">132</td>
-                          </tr>
-                          <tr>
-                            <th scope="row" class="textGenParrafo">Cintura</th>
-                            <td colspan="2" class="textGenParrafo">88</td>                 
-                            <td colspan="2" class="textGenParrafo">92</td>                 
-                            <td colspan="2" class="textGenParrafo">96</td>                 
-                            <td colspan="4" class="textGenParrafo">100</td>                                  
-                            <td colspan="2" class="textGenParrafo">104</td>                 
-                            <td colspan="2" class="textGenParrafo">112</td>                 
-                            <td colspan="2" class="textGenParrafo">120</td>
-                          </tr>
-                          <tr>
-                            <th scope="row" class="textGenParrafo">Largo de manga</th>
-                            <td colspan="2" class="textGenParrafo">17</td>                 
-                            <td colspan="2" class="textGenParrafo">17</td>                 
-                            <td colspan="2" class="textGenParrafo">18</td>                 
-                            <td colspan="4" class="textGenParrafo">19</td>                                  
-                            <td colspan="2" class="textGenParrafo">20</td>                 
-                            <td colspan="2" class="textGenParrafo">20</td>                 
-                            <td colspan="2" class="textGenParrafo">24</td>
-                          </tr>
-                          <tr>
-                            <th scope="row" class="textGenParrafo">Contorno de manga</th>
-                            <td colspan="2" class="textGenParrafo">32</td>                 
-                            <td colspan="2" class="textGenParrafo">32</td>                 
-                            <td colspan="2" class="textGenParrafo">33</td>                 
-                            <td colspan="4" class="textGenParrafo">34</td>                                  
-                            <td colspan="2" class="textGenParrafo">35</td>                 
-                            <td colspan="2" class="textGenParrafo">36</td>                 
-                            <td colspan="2" class="textGenParrafo">37</td>
-                          </tr>
+                        <tbody class="colorBordeTabla">
+                            <tr>
+                                <th scope="row" class="textGenParrafoTabla">Largo</th>
+                                <td class="textGenParrafo">68</td>
+                                <td class="textGenParrafo">74</td>
+                                <td class="textGenParrafo">70</td>
+                                <td class="textGenParrafo">76</td>
+                                <td class="textGenParrafo">73</td>
+                                <td class="textGenParrafo">79</td>
+                                <td class="textGenParrafo">75</td>                        
+                                <td class="textGenParrafo">81</td>
+                                <td class="textGenParrafo">75</td>
+                                <td class="textGenParrafo">81</td>
+                                <td class="textGenParrafo">76</td>
+                                <td class="textGenParrafo">82</td>
+                                <td class="textGenParrafo">78</td>
+                                <td class="textGenParrafo">84</td>
+                                <td class="textGenParrafo">80</td>
+                                <td class="textGenParrafo">86</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="textGenParrafoTabla">Ancho de hombros</th>                        
+                                <td colspan="2" class="textGenParrafo">38</td>                 
+                                <td colspan="2" class="textGenParrafo">39</td>                 
+                                <td colspan="2" class="textGenParrafo">41</td>                 
+                                <td colspan="2" class="textGenParrafo">42</td>                 
+                                <td colspan="2" class="textGenParrafo">45</td>                 
+                                <td colspan="2" class="textGenParrafo">43</td>                 
+                                <td colspan="2" class="textGenParrafo">45</td>                 
+                                <td colspan="2" class="textGenParrafo">49</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="textGenParrafoTabla">Contorno de pecho</th>
+                                <td colspan="2" class="textGenParrafo">96</td>                 
+                                <td colspan="2" class="textGenParrafo">100</td>                 
+                                <td colspan="2" class="textGenParrafo">104</td>                 
+                                <td colspan="4" class="textGenParrafo">108</td>                                  
+                                <td colspan="2" class="textGenParrafo">112</td>                 
+                                <td colspan="2" class="textGenParrafo">120</td>                 
+                                <td colspan="2" class="textGenParrafo">132</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="textGenParrafoTabla">Cintura</th>
+                                <td colspan="2" class="textGenParrafo">88</td>                 
+                                <td colspan="2" class="textGenParrafo">92</td>                 
+                                <td colspan="2" class="textGenParrafo">96</td>                 
+                                <td colspan="4" class="textGenParrafo">100</td>                                  
+                                <td colspan="2" class="textGenParrafo">104</td>                 
+                                <td colspan="2" class="textGenParrafo">112</td>                 
+                                <td colspan="2" class="textGenParrafo">120</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="textGenParrafoTabla">Largo de manga</th>
+                                <td colspan="2" class="textGenParrafo">17</td>                 
+                                <td colspan="2" class="textGenParrafo">17</td>                 
+                                <td colspan="2" class="textGenParrafo">18</td>                 
+                                <td colspan="4" class="textGenParrafo">19</td>                                  
+                                <td colspan="2" class="textGenParrafo">20</td>                 
+                                <td colspan="2" class="textGenParrafo">20</td>                 
+                                <td colspan="2" class="textGenParrafo">24</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="textGenParrafoTabla">Contorno de manga</th>
+                                <td colspan="2" class="textGenParrafo">32</td>                 
+                                <td colspan="2" class="textGenParrafo">32</td>                 
+                                <td colspan="2" class="textGenParrafo">33</td>                 
+                                <td colspan="4" class="textGenParrafo">34</td>                                  
+                                <td colspan="2" class="textGenParrafo">35</td>                 
+                                <td colspan="2" class="textGenParrafo">36</td>                 
+                                <td colspan="2" class="textGenParrafo">37</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>                 
-            </div>
+            </div>    
+            
             
     
             <!--cómo tomar las medidas-->
-            <div class="container" data-aos="zoom-in">
+            <div class="container espaciado" data-aos="zoom-in">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="textCentradoVer">
@@ -215,7 +231,8 @@
                 </div>
 
             </div>
-            <div class="container">
+
+            <div class="container espaciado">
                 <p class="textGenParrafo">
                     Si querés alguna modificación en el talle elegido (por ejemplo que
                     sea un poco más corta o más larga, que sea más angosta de cintura o de mangas,
@@ -252,6 +269,7 @@
                 </div>             
             </div>        
         </footer>
+        
     </div>
 
     <!-- Animaciones -->

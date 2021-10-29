@@ -18,33 +18,47 @@
 
 <body class="bodyColor">
     <div class="pantallaCompleta">
+
         <header class="headerColor">
-            <nav class="navbar">
+            <nav class="navbar navbar-expand-lg navbar-expand-md">
                 <div class="container-fluid">
-                    <!--LOGO (HOME)-->
-                    <a class="navbar-brand navbar--ancho" href="..\index.html">
-                        <img src="..\images/LogoSantulan1.png" alt="Logo" class="anchoLogo d-inline-block align-text-center img-fluid">
+                    <!-- LOGO (HOME) -->
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/LogoSantulan1.png" alt="Logo" class="anchoLogo d-inline-block align-text-center img-fluid">
                         <span class="nombre"> Santulan </span> 
                     </a>
+                    
+                    <!-- MENÚ HAMBUERGUESA   -->
+                    <button class="miBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="line"></span> 
+                        <span class="line"></span> 
+                        <span class="line" style="margin-bottom: 0;"></span>
+                    </button>
+
                     <!-- PÁGINAS -->
-                    <div class="nav">
-                        <a class="hypHeader" aria-current="page" href="..\index.html">HOME</a>
-                        
-                        <div class="dropdown">
-                            <a class="hypHeader dropdown" href="Productos.html">
-                                PRODUCTOS <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <a class="hypHeader" href="subpages/remeras.html">REMERAS</a>
-                                <a class="hypHeader" href="subpages/sweaters.html">SWEATERS</a>
-                                <a class="hypHeader" href="subpages/camperas.html">CAMPERAS</a>
-                            </div>
-                        </div>
-                                                
-                        <a class="hypHeaderActive" href="Amedida.html">A MEDIDA</a>
-                        <a class="hypHeader" href="Talles.html">TALLES</a>
-                        <a class="hypHeader" href="Contacto.html">CONTACTO</a>                        
-                    </div>                        
+                    <div class="collapse navbar-collapse nav--otrasPaginas" id="navbarSupportedContent">
+                        <div class="nav nav--colapsado">
+                            <a class="hypHeader" aria-current="page" href="../index.html">HOME</a>
+                            
+                            <div>
+                                <div class="dropdown">
+                                    <i class="bi bi-chevron-down hypHeaderBoton"></i>
+                                    <div class="dropdown-content">
+                                        <a class="hypHeaderBotonDesplegado" href="subpages/remeras.html">REMERAS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="subpages/sweaters.html">SWEATERS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="subpages/camperas.html">CAMPERAS</a>
+                                    </div>                                  
+                                </div>  
+                                <a class="hypHeader dropdown" href="Productos.html">
+                                    PRODUCTOS 
+                                </a>
+                            </div>    
+
+                            <a class="hypHeaderActive" href="Amedida.html">A MEDIDA</a>
+                            <a class="hypHeader" href="Talles.html">TALLES</a>
+                            <a class="hypHeader" href="Contacto.html">CONTACTO</a>
+                        </div>                                                
+                    </div>
                 </div>
             </nav>            
         </header>
@@ -56,63 +70,60 @@
 
             <div class="container">
                 <div class="row">                    
-                        <div class="col-12 col-md-6">
-                            <div class="textCentradoVer">
-                                <p class="textGenParrafo">
-                                    Podés pedir la prenda que quieras hecha a tu medida,
-                                    por ejemplo: blusas, pantalones, vestidos, camisas.
-                                </p>    
-                                <p class="textGenParrafo">
-                                    Completando el formulario nos pondremos en contacto para definir
-                                    modelo a relizar, medidas y presupuesto. En Tipo de Consulta
-                                    selecciona "Prenda a medida"
-                                </p>
-                                <p class="textGenParrafo">                            
-                                    <a href="Contacto.html"  class="textGenParrafo botones">COMPLETAR</a> 
-                                </p> 
-                            </div>                                                               
-                        </div>
-    
-                        <div class="col-12 col-md-6">
-                            <div class="centradoHoriz">
-                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="..\images/car1.jpg" class="d-block w-100 img-fluid" alt="Vestido floreado">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="..\images/car2.jpg" class="d-block w-100 img-fluid" alt="Vestido floreado espalda">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="..\images/car3.jpg" class="d-block w-100 img-fluid" alt="Vestido de novia">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="..\images/car4.jpg" class="d-block w-100 img-fluid" alt="Vestido largo">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="..\images/car5.jpg" class="d-block w-100 img-fluid" alt="Camisa y pollera">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="..\images/car6.jpg" class="d-block w-100 img-fluid" alt="Vestido corto">
-                                        </div>
+                    <div class="col-12 col-md-6">
+                        <div class="textCentradoVer">
+                            <p class="textGenParrafo">
+                                Podés pedir la prenda que quieras hecha a tu medida,
+                                por ejemplo: blusas, pantalones, vestidos, camisas.
+                            </p>    
+                            <p class="textGenParrafo">
+                                Completando el formulario nos pondremos en contacto para definir
+                                modelo a relizar, medidas y presupuesto. En Tipo de Consulta
+                                selecciona "Prenda a medida"
+                            </p>
+                            <p class="textGenParrafo">                            
+                                <a href="Contacto.html"  class="textGenParrafo botones">COMPLETAR</a> 
+                            </p> 
+                        </div>                                                               
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="centradoHoriz">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="..\images/car1.jpg" class="d-block w-100 img-fluid" alt="Vestido floreado">
                                     </div>
-                                    
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
+                                    <div class="carousel-item">
+                                        <img src="..\images/car2.jpg" class="d-block w-100 img-fluid" alt="Vestido floreado espalda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="..\images/car3.jpg" class="d-block w-100 img-fluid" alt="Vestido de novia">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="..\images/car4.jpg" class="d-block w-100 img-fluid" alt="Vestido largo">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="..\images/car5.jpg" class="d-block w-100 img-fluid" alt="Camisa y pollera">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="..\images/car6.jpg" class="d-block w-100 img-fluid" alt="Vestido corto">
+                                    </div>
+                                </div>
+                                
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
 
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>                                
-                            </div>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>                                
                         </div>
-                    
-                    
+                    </div>  
                 </div>
-
             </div>
         </main>
     

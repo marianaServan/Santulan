@@ -18,35 +18,49 @@
 </head>
 <body class="bodyColor">
     <div class="pantallaCompleta">
+
         <header class="headerColor">
-            <nav class="navbar">
+            <nav class="navbar navbar-expand-lg navbar-expand-md">
                 <div class="container-fluid">
-                    <!--LOGO (HOME)-->
-                    <a class="navbar-brand navbar--ancho" href="..\index.html">
-                        <img src="..\images/LogoSantulan1.png" alt="Logo" class="anchoLogo d-inline-block align-text-center img-fluid">
+                    <!-- LOGO (HOME) -->
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/LogoSantulan1.png" alt="Logo" class="anchoLogo d-inline-block align-text-center img-fluid">
                         <span class="nombre"> Santulan </span> 
                     </a>
+                    
+                    <!-- MENÚ HAMBUERGUESA   -->
+                    <button class="miBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="line"></span> 
+                        <span class="line"></span> 
+                        <span class="line" style="margin-bottom: 0;"></span>
+                    </button>
+
                     <!-- PÁGINAS -->
-                    <div class="nav">
-                        <a class="hypHeader" aria-current="page" href="..\index.html">HOME</a>
-                        
-                        <div class="dropdown">
-                            <a class="hypHeaderActive dropdown" href="Productos.html">
-                                PRODUCTOS <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <a class="hypHeader" href="subpages/remeras.html">REMERAS</a>
-                                <a class="hypHeader" href="subpages/sweaters.html">SWEATERS</a>
-                                <a class="hypHeader" href="subpages/camperas.html">CAMPERAS</a>
-                            </div>
-                        </div>
-                        
-                        <a class="hypHeader" href="Amedida.html">A MEDIDA</a>
-                        <a class="hypHeader" href="Talles.html">TALLES</a>
-                        <a class="hypHeader" href="Contacto.html">CONTACTO</a>                        
-                    </div>                        
+                    <div class="collapse navbar-collapse nav--otrasPaginas" id="navbarSupportedContent">
+                        <div class="nav nav--colapsado">
+                            <a class="hypHeader" aria-current="page" href="../index.html">HOME</a>
+                            
+                            <div>
+                                <div class="dropdown">
+                                    <i class="bi bi-chevron-down hypHeaderBoton"></i>
+                                    <div class="dropdown-content">
+                                        <a class="hypHeaderBotonDesplegado" href="subpages/remeras.html">REMERAS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="subpages/sweaters.html">SWEATERS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="subpages/camperas.html">CAMPERAS</a>
+                                    </div>                                  
+                                </div>  
+                                <a class="hypHeaderActive dropdown" href="Productos.html">
+                                    PRODUCTOS 
+                                </a>
+                            </div>    
+
+                            <a class="hypHeader" href="Amedida.html">A MEDIDA</a>
+                            <a class="hypHeader" href="Talles.html">TALLES</a>
+                            <a class="hypHeader" href="Contacto.html">CONTACTO</a>
+                        </div>                                                
+                    </div>
                 </div>
-            </nav>            
+            </nav>      
         </header>
     
         <main>
@@ -111,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container espaciado">
                 <h2 class="textGenTitulo">
                     ¿Buscás otra prenda?
                 </h2>
@@ -123,8 +137,7 @@
                 <p class="textGenParrafo">
                     <a href="Amedida.html"  class="textGenParrafo botones">A MEDIDA</a>
                 </p>
-            </div>            
-    
+            </div>     
         </main>
     
         <footer>
@@ -151,6 +164,7 @@
                 </div>             
             </div>        
         </footer>
+
     </div>
     
     <!-- Bootstrap -->

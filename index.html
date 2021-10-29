@@ -18,35 +18,50 @@
 </head>
 <body class="bodyColor">
     <div class="pantallaCompleta">
-        <header class="headerColor">
-            <nav class="navbar">
+        <header class="headerColor">   
+            
+            <nav class="navbar navbar-expand-lg navbar-expand-md">
                 <div class="container-fluid">
-                    <!--LOGO (HOME)-->
-                    <a class="navbar-brand navbar--ancho" href="index.html">
+                    <!-- LOGO (HOME) -->
+                    <a class="navbar-brand" href="index.html">
                         <img src="images/LogoSantulan1.png" alt="Logo" class="anchoLogo d-inline-block align-text-center img-fluid">
                         <span class="nombre"> Santulan </span> 
                     </a>
-                    <!-- PÁGINAS -->
-                    <div class="nav">
-                        <a class="hypHeaderActive" aria-current="page" href="index.html">HOME</a>  
                     
-                        <div class="dropdown">
-                            <a class="hypHeader dropdown" href="pages/Productos.html">
-                                PRODUCTOS <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <a class="hypHeader" href="pages/subpages/remeras.html">REMERAS</a>
-                                <a class="hypHeader" href="pages/subpages/sweaters.html">SWEATERS</a>
-                                <a class="hypHeader" href="pages/subpages/camperas.html">CAMPERAS</a>
-                            </div>
-                        </div>   
+                    <!-- MENÚ HAMBUERGUESA   -->
+                    <button class="miBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="line"></span> 
+                        <span class="line"></span> 
+                        <span class="line" style="margin-bottom: 0;"></span>
+                    </button>
 
-                        <a class="hypHeader" href="pages/Amedida.html">A MEDIDA</a>
-                        <a class="hypHeader" href="pages/Talles.html">TALLES</a>
-                        <a class="hypHeader" href="pages/Contacto.html">CONTACTO</a>                        
-                    </div>                        
+                    <!-- PÁGINAS -->
+                    <div class="collapse navbar-collapse nav--otrasPaginas" id="navbarSupportedContent">
+                        <div class="nav nav--colapsado">
+                            <a class="hypHeaderActive" aria-current="page" href="index.html">HOME</a>
+                            
+                            <div>
+                                <div class="dropdown">
+                                    <i class="bi bi-chevron-down hypHeaderBoton"></i>
+                                    <div class="dropdown-content">
+                                        <a class="hypHeaderBotonDesplegado" href="pages/subpages/remeras.html">REMERAS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="pages/subpages/sweaters.html">SWEATERS</a>
+                                        <a class="hypHeaderBotonDesplegado" href="pages/subpages/camperas.html">CAMPERAS</a>
+                                    </div>                                  
+                                </div>  
+                                <a class="hypHeader dropdown" href="pages/Productos.html">
+                                    PRODUCTOS 
+                                </a>
+                            </div>    
+
+                            <a class="hypHeader" href="pages/Amedida.html">A MEDIDA</a>
+                            <a class="hypHeader" href="pages/Talles.html">TALLES</a>
+                            <a class="hypHeader" href="pages/Contacto.html">CONTACTO</a>
+                        </div>                                                
+                    </div>
                 </div>
-            </nav>            
+            </nav>
+                    
         </header>
     
         <main>
@@ -113,9 +128,13 @@
             </div>
 
             <div class="containter">
-                <div class="row">
+                <div class="row" style="margin-left: 0px; margin-right: 0px">
                     <div class="col-12 col-md-6">
-                        <div class="textGen principalAmedida" data-aos="zoom-in"> 
+                        <div class="espaciado" data-aos="zoom-in"> 
+                            <div class="centradoHoriz">
+                                <img src="images/trabajosAmedida.jpg" class="imagenCircular" width="25%" alt="Máquina de coser">
+                            </div>
+                            
                             <h2 class="textGenTitulo">
                                 Prendas a medida
                             </h2>
@@ -131,7 +150,11 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="principalSN" data-aos="zoom-in">
+                        <div class="espaciado" data-aos="zoom-in">
+                            <div class="centradoHoriz">
+                                <img src="images/sobreNosotros.jpg" class="imagenCircular" width="25%" alt="El local">
+                            </div>
+
                             <h2 class="textGenTitulo">
                                 Sobre nosotros
                             </h2>
