@@ -40,19 +40,19 @@ ul {
   flex-direction: column; }
 
 .miBurger {
-  width: 47px;
-  height: 34px;
+  width: 3rem;
+  height: 2.2rem;
   border-color: rgba(95, 42, 105, 0.479);
   background-color: transparent;
   border-radius: 0.3rem; }
 
 .miBurger .line {
   width: 80%;
-  height: 2px;
+  height: 0.13rem;
   float: left;
-  margin-left: 5px;
+  margin-left: 0.32rem;
   background-color: rgba(95, 42, 105, 0.479);
-  margin-bottom: 5px; }
+  margin-bottom: 0.32rem; }
 
 /*-------- Menú desplegable --------*/
 .dropdown {
