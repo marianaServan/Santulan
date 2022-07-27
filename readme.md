@@ -11,7 +11,6 @@ A continuación se detallan los pasos a seguir para instalar el proyecto:
 
 1. Clonar el repositorio desde [GitHub](https://github.com/marianaServan/Santulan)
 2. Instalar las dependencias del proyecto usando `npm install`
-3. Para ejecutar la app correr `npm start`
 
 ## Demo
 
