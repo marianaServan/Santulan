@@ -18,5 +18,5 @@ No es necesario realizar los pasos de instalación para ver la web, puede visita
 
 ## Tecnología usada:
 
-* Html
-* Css - Scss
+* HTML
+* CSS - SCSS
